@@ -1,85 +1,85 @@
 .home {
-    position: relative;
-    background-image: url('../pics/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white; /* Ensure text is readable on the background */
-    text-shadow: 1px 1px 2px black; /* Add text shadow for better readability */
-    overflow: hidden;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white overlay */
-    z-index: 1;
-  }
-  .business-card {
-    position: absolute;
-    bottom: 1rem;
-    left: 1rem;
-    z-index: 2; /* Ensure it appears above the overlay */
-  }
-  
-  .business-card img {
-    width: 100%; /* Adjust to the width of its container */
-    max-width: 350px; /* Maximum width to prevent it from getting too large */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 4rem;
-    border-radius: 8px;
-  }
-  
-  /* Media queries for further responsiveness */
-  @media (max-width: 1200px) {
-    .business-card img {
-      max-width: 70vw; /* Adjust maximum width to 70% of the viewport width */
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .business-card img {
-      max-width: 60vw; /* Adjust maximum width to 60% of the viewport width */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .business-card img {
-      max-width: 50vw; /* Adjust maximum width to 50% of the viewport width */
-    }
-  }
-  .welcome{
-    position: absolute;
-    top: 1rem;
-    min-width: 1rem;
-    z-index: 2; /* Ensure it appears above the overlay */
-  }
-  
-  h1 {
-    z-index: 2; /* Ensure it appears above the overlay */
-    color: inherit; /* Use the inherited color */
-    margin-bottom: 4rem;
-    font-size: 2rem; /* Increased font size */
-    text-align: center;
-  }
-  .office{
-    position: absolute;
-    bottom: 8rem; /* Adjust the bottom value to place it just above the copyright */
-    min-width: 1rem;
-    z-index: 2; /* Ensure it appears above the overlay */
+  position: relative;
+  background-image: url('../pics/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; /* Ensure text is readable on the background */
+  text-shadow: 1px 1px 2px black; /* Add text shadow for better readability */
+  overflow: hidden;
 }
-  .buttons {
-    z-index: 2; /* Ensure it appears above the overlay */
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay for better contrast */
+  z-index: 1;
+}
+
+.welcome {
+  position: relative;
+  padding: 20px;
+  z-index: 2; /* Ensure it appears above the overlay */
+  text-align: center;
+}
+
+.welcome h1 {
+  z-index: 2; /* Ensure it appears above the overlay */
+  color: inherit; /* Use the inherited color */
+  margin-bottom: 10px;
+  font-size: 2.5rem; /* Increased font size */
+}
+
+.welcome h2 {
+  z-index: 2; /* Ensure it appears above the overlay */
+  color: inherit; /* Use the inherited color */
+  margin-bottom: 20px;
+  font-size: 2rem; /* Subheading font size */
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  z-index: 2; /* Ensure it appears above the overlay */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.buttons Button {
+  margin: 10px;
+}
+
+.office {
+  position: absolute;
+  bottom: 8rem; /* Adjust the bottom value to place it just above the copyright */
+  min-width: 1rem;
+  z-index: 2; /* Ensure it appears above the overlay */
+  text-align: center;
+}
+
+.office h4 {
+  margin: 5px 0;
+}
+
+.email-link {
+  color: #FFD700; /* Gold color for better visibility */
+  text-decoration: none;
+}
+
+.email-link:hover {
+  color: #FFA500; /* Orange color on hover */
+  text-decoration: underline;
+}
