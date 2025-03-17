@@ -1,0 +1,23 @@
+/* Tenant.css */
+
+.tenant-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Full height */
+  }
+  
+  .form-box {
+    flex-grow: 1;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 55px; /* Add margin above the footer */
+  }
+  
+  input, textarea, select {
+    margin-bottom: 20px; /* Space between form elements */
+  }
